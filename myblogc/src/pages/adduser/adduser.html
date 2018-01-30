@@ -1,0 +1,58 @@
+<!--
+  Generated template for the AdduserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- menu header -->
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        Cadastrar Usuário
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <!-- menu header -->
+
+
+  <ion-content padding>
+      <form [formGroup]="dados" (ngSubmit)="cadastrarDados()">
+      
+        <ion-list>
+         
+
+           <ion-item>
+              <ion-label>Nome</ion-label>
+              <ion-input type="text" formControlName="nome"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Email</ion-label>
+                <ion-input type="email" formControlName="email"></ion-input>
+            </ion-item>
+
+
+          <!-- <ion-item id="criarConta-input3">
+              <ion-label>
+                Email
+              </ion-label>
+              <ion-input type="email" formControlName="email" placeholder=""></ion-input>
+            </ion-item>
+          
+          <ion-item id="criarConta-input4">
+            <ion-label>
+              Password
+            </ion-label>
+            <ion-input type="password" formControlName="password" placeholder=""></ion-input>
+          </ion-item> -->
+
+        </ion-list>
+        
+        <button type="submit" ion-button color="balanced" block>
+          Cadastrar
+        </button>
+      </form>
+    </ion-content>
